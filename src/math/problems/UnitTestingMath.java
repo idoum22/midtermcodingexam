@@ -13,7 +13,7 @@ public class UnitTestingMath {
         int number = 0;
         if (number == 1)
             return 1;
-        return number * factRecursive(number - 1);
+        return 0;
     }
 
     private static int factIterative(int number) {
@@ -26,7 +26,7 @@ public class UnitTestingMath {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.printf(" Enter input number : ");
+            System.out.print(" Enter input number : ");
             int number = scanner.nextInt();
             int factNumber = factRecursive(number);
             System.out.printf("factorial(%d) - Recursive method: %d\n", number, factNumber);
